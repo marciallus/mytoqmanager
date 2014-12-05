@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.qualcomm.toq">
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.READ_CALL_LOG"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN"/>
+    <uses-permission android:name="android.permission.BLUETOOTH"/>
+    <uses-permission android:name="android.permission.READ_SMS"/>
+    <uses-permission android:name="android.permission.WRITE_SMS"/>
+    <uses-permission android:name="android.permission.RECEIVE_SMS"/>
+    <uses-permission android:name="android.permission.SEND_SMS"/>
+    <uses-permission android:name="android.permission.RECEIVE_MMS"/>
+    <uses-permission android:name="android.permission.RECEIVE_WAP_PUSH"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.UPDATE_DEVICE_STATS"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.READ_CONTACTS"/>
+    <uses-permission android:name="android.permission.MODIFY_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS"/>
+    <uses-permission android:name="android.permission.PROCESS_OUTGOING_CALLS"/>
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.READ_CALENDAR"/>
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+    <uses-permission android:name="android.permission.READ_CALENDAR"/>
+    <uses-permission android:name="android.permission.WRITE_CALENDAR"/>
+    <uses-permission android:name="android.permission.BROADCAST_STICKY"/>
+    <uses-permission android:name="android.permission.READ_LOGS"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_GPS"/>
+    <uses-permission android:name="android.permission.ACCESS_LOCATION"/>
+    <uses-permission android:name="android.permission.GET_TASKS"/>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"/>
+    <application android:debuggable="false" android:icon="@drawable/toq_launcher_icon" android:label="@string/app_name" android:largeHeap="true" android:name=".ToqApplication" android:theme="@android:style/Theme.NoTitleBar">
+        <activity android:configChanges="keyboardHidden|orientation" android:label="@string/app_name" android:name=".base.ui.activity.SplashScreenActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:hardwareAccelerated="false" android:label="@string/app_name" android:name=".smartwatch.ui.activity.MainActivity" android:screenOrientation="portrait" android:theme="@style/PopupActivityTheme"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:label="@string/app_name" android:launchMode="singleTop" android:name=".smartwatch.ui.activity.PreferencesListActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:excludeFromRecents="true" android:name=".smartwatch.ui.activity.FindPhoneActivity" android:noHistory="false" android:screenOrientation="portrait" android:theme="@android:style/Theme.Dialog"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name=".smartwatch.ui.activity.FindWDActivity" android:noHistory="false" android:screenOrientation="portrait" android:theme="@android:style/Theme.Dialog"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:launchMode="singleTop" android:name=".smartwatch.ui.activity.QuickReplyListActivity" android:noHistory="false" android:screenOrientation="portrait" android:theme="@style/PopupActivityTheme" android:windowSoftInputMode="adjustPan"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:launchMode="singleTop" android:name=".smartwatch.ui.activity.MoreAppletsActivity" android:noHistory="false" android:screenOrientation="portrait" android:theme="@style/PopupActivityTheme" android:windowSoftInputMode="adjustPan"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:launchMode="singleTop" android:name=".smartwatch.ui.activity.DeviceStatusActivity" android:noHistory="false" android:screenOrientation="portrait" android:theme="@style/PopupActivityTheme"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:launchMode="singleTop" android:name=".smartwatch.ui.activity.FTPFileBrowserActivity" android:noHistory="false" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:launchMode="singleTop" android:name=".smartwatch.ui.activity.CalendarChooserActivity" android:noHistory="false" android:screenOrientation="portrait" android:theme="@style/PopupActivityTheme"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:launchMode="singleTop" android:name=".smartwatch.ui.activity.StockListActivity" android:noHistory="false" android:screenOrientation="portrait" android:theme="@style/CustomHoloTheme" android:windowSoftInputMode="stateUnchanged|adjustPan"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:launchMode="singleTop" android:name=".smartwatch.ui.activity.WeatherListActivity" android:noHistory="false" android:screenOrientation="portrait" android:theme="@style/CustomHoloTheme" android:windowSoftInputMode="stateUnchanged|adjustPan"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:launchMode="singleTop" android:name="com.qualcomm.toq.base.ui.activity.AboutScreenActivity" android:noHistory="false" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar" android:windowSoftInputMode="adjustPan"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:launchMode="singleTop" android:name="com.qualcomm.toq.base.ui.activity.HelpScreenActivity" android:noHistory="false" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar" android:windowSoftInputMode="adjustPan"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:excludeFromRecents="true" android:name=".smartwatch.ui.activity.PhoneCallBaseActivity" android:screenOrientation="portrait" android:taskAffinity="com.qualcomm.toq.call.task" android:theme="@style/Theme.Transparent"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:hardwareAccelerated="false" android:launchMode="singleTop" android:name="com.qualcomm.toq.base.ui.activity.OpenSourceLicensesWebView" android:noHistory="false" android:screenOrientation="portrait" android:theme="@style/PopupActivityTheme"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:launchMode="singleTop" android:name=".smartwatch.ui.activity.ClockSettingsActivity" android:noHistory="false" android:screenOrientation="portrait" android:theme="@style/PopupActivityTheme"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:launchMode="singleTop" android:name=".smartwatch.ui.activity.FavoriteAppLauncherActivity" android:noHistory="false" android:screenOrientation="portrait" android:theme="@style/PopupActivityTheme"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:launchMode="singleTop" android:name=".smartwatch.ui.activity.NotificationSettingsActivity" android:noHistory="false" android:screenOrientation="portrait" android:theme="@style/CustomHoloTheme" android:windowSoftInputMode="adjustNothing"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:launchMode="singleTop" android:name=".smartwatch.ui.activity.AdvancedScreenSettingsActivity" android:noHistory="false" android:screenOrientation="portrait" android:theme="@style/PopupActivityTheme"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:launchMode="singleTop" android:name=".smartwatch.ui.activity.IconStyleActivity" android:noHistory="false" android:screenOrientation="portrait" android:theme="@style/PopupActivityTheme"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:launchMode="singleTop" android:name=".smartwatch.ui.activity.MusicPlayerSettingsActivity" android:noHistory="false" android:screenOrientation="portrait" android:theme="@style/PopupActivityTheme"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:launchMode="singleTop" android:name=".smartwatch.ui.activity.AllJoynSettingsActivity" android:noHistory="false" android:screenOrientation="portrait" android:theme="@style/PopupActivityTheme"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:launchMode="singleTop" android:name=".smartwatch.ui.activity.ActivityMonitoringActivity" android:noHistory="false" android:screenOrientation="portrait" android:theme="@style/PopupActivityTheme"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:launchMode="singleTop" android:name=".smartwatch.ui.activity.ActivityGoalReminderTimesActivity" android:noHistory="false" android:screenOrientation="portrait" android:theme="@style/PopupActivityTheme"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:launchMode="singleTop" android:name=".smartwatch.ui.activity.ImageSharingActivity" android:noHistory="false" android:screenOrientation="portrait" android:theme="@style/PopupActivityTheme"/>
+        <activity android:launchMode="singleTop" android:name="com.qualcomm.toq.base.ui.activity.WhatsNewActivity" android:noHistory="false" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:launchMode="singleTop" android:name=".smartwatch.ui.activity.AppletMenuActivity" android:noHistory="false" android:screenOrientation="portrait" android:theme="@style/PopupActivityTheme"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:launchMode="singleTop" android:name=".smartwatch.ui.activity.ActivityDashboardScreenActivity" android:noHistory="false" android:screenOrientation="portrait" android:theme="@style/PopupActivityTheme"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:launchMode="singleTop" android:name=".smartwatch.ui.activity.ActivityDayScreenActivity" android:noHistory="false" android:screenOrientation="portrait" android:theme="@style/PopupActivityTheme"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:exported="true" android:hardwareAccelerated="false" android:label="@string/ep_app_name" android:name=".earpiece.ui.activity.MainActivity" android:screenOrientation="portrait" android:theme="@style/PopupActivityTheme"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:exported="true" android:hardwareAccelerated="false" android:label="@string/ep_app_name" android:name=".earpiece.ui.activity.DeviceStatusActivity" android:screenOrientation="portrait" android:theme="@style/PopupActivityTheme"/>
+        <service android:name=".smartwatch.service.PHubService">
+            <intent-filter>
+                <action android:name="com.qualcomm.toq.smartwatch.service.PHubService"/>
+            </intent-filter>
+        </service>
+        <service android:name=".base.connectionmanager.bluetooth.receiver.HandleMessageService">
+            <intent-filter>
+                <action android:name="com.qualcomm.toq.smartwatch.connectionmanager.bluetooth.receiver.HandleMessageService"/>
+            </intent-filter>
+        </service>
+        <service android:name=".smartwatch.service.AmbientIntentService"/>
+        <receiver android:name=".base.connectionmanager.bluetooth.receiver.BTPHubReceiver">
+            <intent-filter>
+                <action android:name="android.bluetooth.device.action.BOND_STATE_CHANGED"/>
+                <action android:name="android.bluetooth.adapter.action.STATE_CHANGED"/>
+                <action android:name="com.qualcomm.toq.base.connect_remote_device"/>
+                <action android:name="com.qualcomm.toq.base.connection_state_changed"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:enabled="true" android:exported="true" android:name=".smartwatch.service.receiver.PHubServiceReceiver" android:permission="android.permission.BROADCAST_SMS">
+            <intent-filter android:priority="2147483647">
+                <action android:name="android.intent.action.TIME_SET"/>
+                <action android:name="android.intent.action.TIMEZONE_CHANGED"/>
+                <action android:name="android.intent.action.DATE_CHANGED"/>
+                <action android:name="android.provider.Telephony.SMS_RECEIVED"/>
+                <action android:name="android.provider.Telephony.SMS_DELIVER"/>
+                <action android:name="android.intent.action.NEW_OUTGOING_CALL"/>
+                <action android:name="android.intent.action.PHONE_STATE"/>
+                <action android:name="android.media.RINGER_MODE_CHANGED"/>
+                <action android:name="android.media.VIBRATE_SETTING_CHANGED"/>
+                <action android:name="com.qualcomm.toq.smartwatch.calendarcontroller.popup"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.provider.Telephony.WAP_PUSH_RECEIVED"/>
+                <data android:mimeType="application/vnd.wap.mms-message"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:enabled="true" android:name=".smartwatch.receiver.MusicReceiver">
+            <intent-filter>
+                <action android:name="com.android.music.metachanged"/>
+                <action android:name="com.android.music.playstatechanged"/>
+                <action android:name="com.android.music.musicservicecommand"/>
+                <action android:name="com.android.music.queuechanged"/>
+                <action android:name="com.android.music.playbackcomplete"/>
+                <action android:name="com.htc.music.metachanged"/>
+                <action android:name="com.htc.music.playbackcomplete"/>
+                <action android:name="com.htc.music.playstatechanged"/>
+                <action android:name="com.doubleTwist.androidPlayer.playstatechanged"/>
+                <action android:name="com.doubleTwist.androidPlayer.metachanged"/>
+                <action android:name="com.nullsoft.winamp.metachanged"/>
+                <action android:name="com.nullsoft.winamp.playstatechanged"/>
+                <action android:name="com.miui.player.metachanged"/>
+                <action android:name="com.miui.player.playstatechanged"/>
+                <action android:name="com.miui.player.playbackcomplete"/>
+                <action android:name="com.amazon.mp3.metachanged"/>
+                <action android:name="com.andrew.apollo.metachanged"/>
+                <action android:name="com.rdio.android.metachanged"/>
+                <action android:name="com.rdio.android.playstatechanged"/>
+                <action android:name="com.real.IMP.metachanged"/>
+                <action android:name="com.real.IMP.playstatechanged"/>
+                <action android:name="com.real.IMP.playbackcomplete"/>
+                <action android:name="com.real.RealPlayer.metachanged"/>
+                <action android:name="com.real.RealPlayer.playstatechanged"/>
+                <action android:name="com.real.RealPlayer.playbackcomplete"/>
+                <action android:name="com.samsung.sec.android.MusicPlayer.metachanged"/>
+                <action android:name="com.samsung.sec.android.MusicPlayer.playstatechanged"/>
+                <action android:name="com.samsung.sec.android.MusicPlayer.playbackcomplete"/>
+                <action android:name="com.sec.android.app.music.playstatechanged"/>
+                <action android:name="com.sec.android.app.music.playbackcomplete"/>
+                <action android:name="com.sec.android.app.music.metachanged"/>
+                <action android:name="com.samsung.MusicPlayer.metachanged"/>
+                <action android:name="com.samsung.MusicPlayer.playbackcomplete"/>
+                <action android:name="com.samsung.MusicPlayer.playstatechanged"/>
+                <action android:name="com.samsung.music.metachanged"/>
+                <action android:name="com.samsung.music.playbackcomplete"/>
+                <action android:name="com.samsung.music.playstatechanged"/>
+                <action android:name="com.samsung.sec.android.metachanged"/>
+                <action android:name="com.samsung.sec.android.playbackcomplete"/>
+                <action android:name="com.samsung.sec.android.playstatechanged"/>
+                <action android:name="com.samsung.sec.metachanged"/>
+                <action android:name="com.samsung.sec.playbackcomplete"/>
+                <action android:name="com.samsung.sec.playstatechanged"/>
+                <action android:name="com.sonyericsson.music.metachanged"/>
+                <action android:name="com.sonyericsson.music.playbackcontrol.ACTION_TRACK_STARTED"/>
+                <action android:name="com.sonyericsson.music.playbackcontrol.ACTION_PAUSED"/>
+                <action android:name="com.sonyericsson.music.TRACK_COMPLETED"/>
+                <action android:name="com.sonyericsson.music.playbackcomplete"/>
+                <action android:name="com.sonyericsson.music.playstatechanged"/>
+                <action android:name="com.rhapsody.playstatechanged"/>
+                <action android:name="com.maxmpz.audioplayer.playstatechanged"/>
+                <action android:name="com.adam.aslfms.notify.playstatechanged"/>
+                <action android:name="net.jjc1138.android.scrobbler.action.MUSIC_STATUS"/>
+                <action android:name="com.jrtstudio.music.playstatechanged"/>
+                <action android:name="com.jrtstudio.music.metachanged"/>
+                <action android:name="com.musixmatch.android.lyrify.playstatechanged"/>
+                <action android:name="com.musixmatch.android.lyrify.metachanged"/>
+                <action android:name="com.jrtstudio.AnotherMusicPlayer.playstatechanged"/>
+                <action android:name="com.jrtstudio.AnotherMusicPlayer.metachanged"/>
+                <action android:name="gpc.myweb.hinet.net.AudioMaster.playstatechanged"/>
+                <action android:name="gpc.myweb.hinet.net.AudioMaster.metachanged"/>
+                <action android:name="org.iii.romulus.meridian.playstatechanged"/>
+                <action android:name="org.iii.romulus.meridian.metachanged"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name=".smartwatch.service.receiver.PHubTimeReceiver">
+            <intent-filter>
+                <action android:name="com.qualcomm.toq.smartwatch.service.receiver.PHubTimeReceiver"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="true" android:name=".smartwatch.addon.receiver.AddOnInstallationReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_ADDED"/>
+                <action android:name="android.intent.action.PACKAGE_CHANGED"/>
+                <action android:name="android.intent.action.PACKAGE_INSTALL"/>
+                <action android:name="android.intent.action.PACKAGE_REMOVED"/>
+                <action android:name="android.intent.action.PACKAGE_REPLACED"/>
+                <data android:scheme="package"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="false" android:name=".smartwatch.ui.receiver.PhoneCallBaseReceiver">
+            <intent-filter>
+                <action android:name="com.qualcomm.toq.smartwatch.initiate_call"/>
+                <action android:name="com.qualcomm.toq.smartwatch.cancel_call"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="true" android:name=".smartwatch.utils.DeviceLanguageChangeReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.LOCALE_CHANGED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:enabled="true" android:name=".smartwatch.receiver.SmartwatchUpgradeReceiver">
+            <intent-filter>
+                <action android:name="com.qualcomm.toq.smartwatch.app_updated"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:enabled="true" android:name=".smartwatch.ui.receiver.ToqNotificationReceiver">
+            <intent-filter>
+                <action android:name="com.qualcomm.toq.smartwatch.action.TOQ_NOTIFICATION_ON_CLICK"/>
+                <action android:name="com.qualcomm.toq.smartwatch.action.TOQ_NOTIFICATION_ON_DELETE"/>
+            </intent-filter>
+        </receiver>
+        <service android:name=".smartwatch.service.LoggingService"/>
+        <service android:exported="true" android:label="@string/notification_service_label" android:name=".smartwatch.service.NotificationAccessibilityService" android:permission="android.permission.BIND_ACCESSIBILITY_SERVICE">
+            <intent-filter>
+                <action android:name="android.accessibilityservice.AccessibilityService"/>
+            </intent-filter>
+            <meta-data android:name="android.accessibilityservice" android:resource="@xml/accessibilityservice"/>
+        </service>
+        <service android:exported="true" android:label="@string/notification_service_label" android:name=".smartwatch.service.PHubNotificationListenerService" android:permission="android.permission.BIND_NOTIFICATION_LISTENER_SERVICE">
+            <intent-filter>
+                <action android:name="android.service.notification.NotificationListenerService"/>
+            </intent-filter>
+        </service>
+        <service android:exported="true" android:name=".smartwatch.api.v1.deckofcards.service.DeckOfCardsService">
+            <intent-filter>
+                <action android:name="com.qualcomm.toq.smartwatch.api.v1.deckofcards.remote.rpc.IDeckOfCardsManager_v1"/>
+            </intent-filter>
+        </service>
+    </application>
+</manifest>

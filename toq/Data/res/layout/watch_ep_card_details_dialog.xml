@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:custom="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.qualcomm.toq.base.ui.customview.PhubTextView android:textSize="23.0sp" android:textColor="#ff35b5e4" android:layout_gravity="left" android:id="@id/watch_EP_card_details_dialog_title_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="17.0dip" android:layout_marginTop="13.0dip" android:text="@string/watch_details" custom:font="@string/roboto_medium" />
+        <View android:layout_width="fill_parent" android:layout_height="17.0dip" />
+    </LinearLayout>
+    <View android:layout_gravity="center" android:id="@id/watch_card_details_dialog_divider_image" android:background="#ff35b5e4" android:layout_width="fill_parent" android:layout_height="2.0dip" />
+    <RelativeLayout android:orientation="horizontal" android:id="@id/voice_calls_toggle_layout" android:background="@android:color/white" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="13.0dip">
+        <ImageView android:id="@id/phone_icon_iv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="17.0dip" android:src="@drawable/phone_icon" android:contentDescription="@string/description_phone_icon" />
+        <com.qualcomm.toq.base.ui.customview.PhubTextView android:textSize="18.0sp" android:textColor="#ff222222" android:layout_gravity="center_vertical" android:id="@id/used_for_voice_calls_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:text="@string/used_for_voice_calls" android:layout_toRightOf="@id/phone_icon_iv" custom:font="@string/roboto_regular" />
+        <Button android:textSize="16.0sp" android:textColor="#ffffffff" android:id="@id/role_config_switch" android:background="@drawable/blue_button_selector" android:padding="4.0dip" android:layout_width="wrap_content" android:layout_height="30.0dip" android:layout_marginLeft="15.0dip" android:layout_marginTop="13.0dip" android:layout_marginBottom="13.0dip" android:text="@string/role_config_switch" android:layout_toRightOf="@id/phone_icon_iv" android:layout_below="@id/used_for_voice_calls_tv" />
+        <View android:layout_gravity="center" android:id="@id/role_change_divider_image" android:background="#ffe2e2e1" android:layout_width="fill_parent" android:layout_height="2.0dip" android:layout_below="@id/role_config_switch" />
+    </RelativeLayout>
+    <LinearLayout android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ListView android:layout_gravity="left" android:id="@id/wd_ep_details_list_view" android:background="@android:color/white" android:paddingTop="10.0dip" android:paddingRight="20.0dip" android:layout_width="fill_parent" android:layout_height="240.0dip" android:layout_marginLeft="17.0dip" android:cacheColorHint="@android:color/transparent" android:divider="@android:color/white" android:dividerHeight="10.0dip" />
+    </LinearLayout>
+    <View android:layout_gravity="center" android:id="@id/watch_card_details_dialog_bottom_divider_image" android:background="#ffe2e2e1" android:layout_width="fill_parent" android:layout_height="2.0dip" />
+    <Button android:textSize="18.0sp" android:textColor="@android:color/black" android:gravity="center" android:layout_gravity="center" android:id="@id/watch_ep_details_dialog_agree_button" android:background="@drawable/dialog_items_selector" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_marginTop="1.0dip" android:text="@string/ok" />
+</LinearLayout>

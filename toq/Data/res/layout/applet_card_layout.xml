@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/grid_item_layout1" android:background="#ff242929" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:custom="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:id="@id/grid_item_container" android:background="#ff242929" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <RelativeLayout android:orientation="vertical" android:id="@id/grid_item_layout" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="4.0dip">
+            <ImageView android:id="@id/app_image" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" android:src="@drawable/applet_activity" android:scaleType="center" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" android:contentDescription="@string/description_applet_activity" />
+            <ImageView android:layout_gravity="right" android:id="@id/app_selected" android:paddingRight="5.0dip" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:src="@drawable/selected_favapp" android:layout_alignParentTop="true" android:layout_alignParentRight="true" android:contentDescription="@string/description_activity_day_screen_back" />
+            <com.qualcomm.toq.base.ui.customview.PhubTextView android:textSize="14.0sp" android:textColor="#ff292d2e" android:id="@id/app_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_below="@id/app_image" android:layout_centerHorizontal="true" custom:font="@string/roboto_light" />
+        </RelativeLayout>
+    </LinearLayout>
+    <View android:id="@id/fav_grid_bottom_margin" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="8.0dip" />
+</LinearLayout>

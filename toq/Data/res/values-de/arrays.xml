@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="comms_list_preference">
+        <item>zeigen 10 jüngsten</item>
+        <item>zeigen 20 jüngsten</item>
+        <item>zeigen 30 jüngsten</item>
+        <item>zeigen 40 jüngsten</item>
+    </string-array>
+    <string-array name="clock_light_settings_list">
+        <item>10 Augenblick</item>
+        <item>20 Augenblick</item>
+        <item>30 Augenblick</item>
+    </string-array>
+    <string-array name="double_tap_speed_settings_list">
+        <item>Schleppend</item>
+        <item>Medium</item>
+        <item>Schnell</item>
+    </string-array>
+    <string-array name="main_activity_pop_up_list_headset_disabled">
+        <item>Watch setup video</item>
+        <item>Help</item>
+        <item>About</item>
+        <item>Setup headsets</item>
+    </string-array>
+    <string-array name="main_activity_pop_up_list_headset_enabled">
+        <item>Sehen Sie Video-Setup</item>
+        <item>Hilfe</item>
+        <item>Über</item>
+    </string-array>
+    <string-array name="weather_activity_pop_up_list">
+        <item>Einheiten ändern</item>
+        <item>Änderungen verwerfen</item>
+    </string-array>
+    <string-array name="ambient_activity_pop_up_list">
+        <item>Änderungen verwerfen</item>
+    </string-array>
+    <string-array name="qr_activity_pop_up_list">
+        <item>Standardeinstellungen wiederherstellen</item>
+        <item>Änderungen verwerfen</item>
+    </string-array>
+    <string-array name="fav_app_main_pop_up_list">
+        <item>Zum Haupt Set</item>
+        <item>Änderungen verwerfen</item>
+    </string-array>
+    <string-array name="ambient_weather_temperature_units">
+        <item>Fahrenheit</item>
+        <item>Celsius</item>
+    </string-array>
+    <string-array name="fav_app_noapplet_pop_up_list">
+        <item>Änderungen verwerfen</item>
+    </string-array>
+    <string-array name="notification_act__pop_up_list">
+        <item>Alle auswählen</item>
+        <item>Alles</item>
+        <item>Änderungen verwerfen</item>
+    </string-array>
+    <string-array name="notification_act__pop_up_list_non_accesibility">
+        <item>Änderungen verwerfen</item>
+    </string-array>
+    <string-array name="icon_style_activity_pop_up_list">
+        <item>Änderungen verwerfen</item>
+    </string-array>
+    <string-array name="alljoyn_settings_activity_pop_up_list">
+        <item>Änderungen verwerfen</item>
+    </string-array>
+    <string-array name="activity_settings_activity_pop_up_list">
+        <item>Änderungen verwerfen</item>
+        <item>Löschen Tätigkeit Geschichte</item>
+    </string-array>
+    <string-array name="activity_settings_activity_pop_up_list_release">
+        <item>Änderungen verwerfen</item>
+    </string-array>
+    <string-array name="activity_goal_reminder_settings_pop_up_list">
+        <item>Änderungen verwerfen</item>
+    </string-array>
+    <string-array name="music_not_supported_apps_pkg_array">
+        <item>com.android.providers.media</item>
+        <item>com.htc.InternetRadio</item>
+        <item>com.google.android.youtube</item>
+        <item>com.jiubang.goscreenlock</item>
+        <item>tunein.player</item>
+        <item>com.skin</item>
+        <item>com.htc.fm</item>
+        <item>com.estrongs.android.pop</item>
+        <item>com.triplayinc.mmc</item>
+        <item>ru.tentracks.android</item>
+        <item>com.cyberon.cvc</item>
+        <item>com.mycloudplayers.mycloudplayer</item>
+        <item>com.soundcloud.android</item>
+        <item>com.tencent.mm</item>
+    </string-array>
+</resources>

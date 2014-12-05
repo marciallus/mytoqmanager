@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/about_root" android:background="#ff2f3234" android:layout_width="fill_parent" android:layout_height="fill_parent" android:splitMotionEvents="false"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:custom="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:layout_gravity="left" android:orientation="horizontal" android:id="@id/advanced_screen_title_bar" android:background="@drawable/title_bar" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:layout_gravity="center" android:orientation="horizontal" android:id="@id/advanced_settings_back_linear_layout" android:background="@drawable/done_selector" android:layout_width="wrap_content" android:layout_height="47.0dip">
+            <ImageView android:layout_gravity="center" android:id="@id/advanced_screen_back_image" android:layout_width="20.0dip" android:layout_height="wrap_content" android:src="@drawable/action_bar_back_default" android:contentDescription="@string/description_action_bar_back" />
+            <com.qualcomm.toq.base.ui.customview.PhubTextView android:textSize="25.0sp" android:textColor="#ffffffff" android:layout_gravity="center" android:id="@id/advanced_screen_title_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="@string/advanced_settings_title" custom:font="@string/roboto_light" />
+        </LinearLayout>
+    </LinearLayout>
+    <ScrollView android:orientation="vertical" android:id="@id/advanced_settings_scroll_view" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/advanced_screen_title_bar">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:splitMotionEvents="false">
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/vibrating_alerts_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="28.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="16.0dip">
+                <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:id="@id/vibrating_alerts_items_text_layout" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="6.5">
+                    <com.qualcomm.toq.base.ui.customview.PhubTextView android:textSize="18.0sp" android:textColor="#ffffffff" android:layout_gravity="left" android:id="@id/vibrating_alerts_list_item_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/vibrating_alerts_title" custom:font="@string/roboto_light" />
+                    <com.qualcomm.toq.base.ui.customview.PhubTextView android:textSize="14.0sp" android:textStyle="normal" android:textColor="#ff797f7f" android:layout_gravity="left" android:id="@id/vibrating_alerts_list_item_description" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/vibrating_alerts_description" custom:font="@string/roboto_light" />
+                </LinearLayout>
+                <com.qualcomm.toq.base.ui.customview.PhubCustomSwitchView android:gravity="center" android:id="@id/vibrating_alerts_items_switch" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:checked="true" android:textOn="@string/ON" android:textOff="@string/OFF" android:thumb="@drawable/custom_switch" android:layout_weight="3.5" android:track="@drawable/switch_bg_holo_light" />
+            </LinearLayout>
+            <View android:id="@id/vibrating_alerts_items_divider" android:background="#ff7f7d7d" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="15.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="15.0dip" />
+            <include android:id="@id/private_notification_settings_row" layout="@layout/toggle_row_layout" />
+            <View android:id="@id/private_settings_items_divider" android:background="#ff7f7d7d" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="15.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="15.0dip" />
+            <include android:id="@id/toq_talk_settings_row" android:visibility="gone" layout="@layout/toq_talk_toggle_row_layout" />
+            <View android:id="@id/toq_talk_settings_items_divider" android:background="#ff7f7d7d" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="15.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="15.0dip" />
+            <LinearLayout android:orientation="vertical" android:id="@id/advanced_settings_linear_list" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip" android:splitMotionEvents="false">
+                <include android:id="@id/clock_time_out_layout" layout="@layout/advanced_settings_inflator" />
+                <include android:id="@id/light_duration_layout" layout="@layout/advanced_settings_inflator" />
+                <include android:id="@id/double_tap_speed_layout" layout="@layout/advanced_settings_inflator" />
+                <include android:id="@id/call_history_layout" layout="@layout/advanced_settings_inflator" />
+                <include android:id="@id/message_history_layout" layout="@layout/advanced_settings_inflator" />
+                <include android:id="@id/language_setting_layout" android:visibility="gone" layout="@layout/advanced_settings_inflator" />
+            </LinearLayout>
+            <include android:id="@id/usage_logs_settings_row" android:visibility="gone" layout="@layout/toggle_row_layout" />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="128.0dip" android:layout_height="85.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:custom="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/imageView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:src="@drawable/applet_launcher" android:scaleType="center" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" android:contentDescription="@string/description_applet_launcher" />
+    <com.qualcomm.toq.base.ui.customview.PhubTextView android:textColor="#ff181e1e" android:id="@id/imageText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="@string/fav_app_launcher_text" android:layout_below="@id/imageView" android:layout_centerHorizontal="true" custom:font="@string/roboto_regular" />
+</RelativeLayout>

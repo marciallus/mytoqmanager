@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/help_screen_row_root" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:custom="http://schemas.android.com/apk/res-auto">
+    <com.qualcomm.toq.base.ui.customview.PhubTextView android:textSize="18.0sp" android:textColor="#ff292d2e" android:id="@id/help_screen_row_primary_txt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="15.0dip" android:layout_marginRight="15.0dip" custom:font="@string/roboto_light" />
+    <com.qualcomm.toq.base.ui.customview.PhubTextView android:textSize="14.0sp" android:textColor="#ff292d2e" android:id="@id/help_screen_row_secondary_txt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="15.0dip" android:alpha="0.4" custom:font="@string/roboto_regular" />
+    <View android:background="#ffaeaeae" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginTop="15.0dip" />
+</LinearLayout>

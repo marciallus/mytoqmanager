@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:custom="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:background="@drawable/card_bg" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:orientation="horizontal" android:id="@id/card_relative_layout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:id="@id/icon_layout" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <ImageView android:id="@id/icon_image_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" android:contentDescription="@string/description_ep_icon_image_view" />
+                <com.qualcomm.toq.base.ui.customview.PhubTextView android:textSize="46.0sp" android:textColor="#ff242929" android:id="@id/icon_text_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:layout_toRightOf="@id/icon_image_view" custom:font="@string/roboto_thin" />
+            </RelativeLayout>
+            <RelativeLayout android:orientation="horizontal" android:id="@id/status_icon_text_layout" android:background="#fff5f5f5" android:layout_width="fill_parent" android:layout_height="25.0dip" android:layout_marginLeft="15.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="15.0dip" android:layout_below="@id/icon_layout">
+                <ImageView android:id="@id/connection_status_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:contentDescription="@string/description_ep_connection_status_icon" />
+                <com.qualcomm.toq.base.ui.customview.PhubTextView android:textSize="14.0sp" android:textColor="#ff73c694" android:id="@id/status_icon_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="@string/ok" android:layout_toRightOf="@id/connection_status_icon" android:layout_centerVertical="true" custom:font="@string/roboto_regular" />
+                <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+                    <com.qualcomm.toq.base.ui.customview.PhubTextView android:textSize="14.0sp" android:textColor="#ff5c5c5c" android:gravity="center_horizontal" android:id="@id/priority_icon_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ep_main_screen_primary_icon_text" android:singleLine="true" android:drawableLeft="@drawable/primary_icon" android:drawablePadding="5.0dip" custom:font="@string/roboto_light" />
+                </FrameLayout>
+                <FrameLayout android:id="@id/battery_status_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+                    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ep_battery_status_icon" android:contentDescription="@string/description_ep_battery_status" />
+                    <ProgressBar android:layout_gravity="left" android:id="@id/battery_status_fill_progress" android:layout_width="17.5dip" android:layout_height="9.0dip" android:layout_marginLeft="2.0dip" android:layout_marginTop="2.0dip" android:max="100" android:progressDrawable="@drawable/ep_battery_status_progress_bar" style="@android:style/Widget.ProgressBar.Horizontal" />
+                </FrameLayout>
+                <com.qualcomm.toq.base.ui.customview.PhubTextView android:textSize="14.0sp" android:textColor="#ff5c5c5c" android:id="@id/battery_percentage_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:text="@string/battery_percentage_text" android:singleLine="true" android:layout_toLeftOf="@id/battery_status_layout" android:layout_centerVertical="true" custom:font="@string/roboto_light" />
+            </RelativeLayout>
+            <View android:layout_width="fill_parent" android:layout_height="15.0dip" android:layout_below="@id/status_icon_text_layout" />
+            <ImageView android:id="@id/info_icon" android:padding="2.5dip" android:visibility="visible" android:layout_width="25.0dip" android:layout_height="25.0dip" android:src="@drawable/info_icon_selector" android:layout_alignParentTop="true" android:layout_alignParentRight="true" android:contentDescription="@string/description_ep_info" />
+        </RelativeLayout>
+        <com.qualcomm.toq.base.ui.customview.PhubTextView android:textSize="14.0sp" android:textColor="#ff5c5c5c" android:layout_gravity="left|center" android:id="@id/ep_status_caption_textview" android:paddingLeft="20.0dip" android:paddingRight="20.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="15.0dip" custom:font="@string/roboto_regular" />
+    </LinearLayout>
+    <View android:background="@drawable/wd_ep_card_overlay_selector" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</FrameLayout>

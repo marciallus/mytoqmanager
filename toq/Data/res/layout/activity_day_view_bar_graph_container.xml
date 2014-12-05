@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:custom="http://schemas.android.com/apk/res-auto">
+    <com.qualcomm.toq.base.ui.customview.PhubTextView android:textSize="18.0sp" android:textColor="#ff2a2d2e" android:layout_gravity="left" android:id="@id/activity_day_screen_date_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="20.0dip" android:layout_marginRight="20.0dip" custom:font="@string/roboto_light" />
+    <FrameLayout android:layout_gravity="left" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="200.0dip" android:layout_marginLeft="20.0dip" android:layout_marginTop="17.0dip" android:layout_marginRight="20.0dip">
+        <LinearLayout android:orientation="vertical" android:id="@id/activity_day_screen_bar_chart_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </FrameLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="19.0dip" android:layout_marginRight="20.0dip">
+        <FrameLayout android:layout_gravity="left|center" android:id="@id/activity_day_screen_goal_chart_layout" android:layout_width="0.0dip" android:layout_height="100.0dip" android:layout_weight="3.5" />
+        <RelativeLayout android:layout_gravity="center_vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="6.5">
+            <com.qualcomm.toq.base.ui.customview.PhubTextView android:textSize="28.0sp" android:textColor="#ff2a2d2e" android:id="@id/activity_day_screen_points_achieved_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:layout_alignParentLeft="true" android:layout_centerVertical="true" custom:font="@string/roboto_medium" />
+            <com.qualcomm.toq.base.ui.customview.PhubTextView android:textSize="18.0sp" android:textColor="#ff98a0a0" android:id="@id/activity_day_screen_points_target_text" android:paddingBottom="4.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/activity_day_screen_points_achieved_text" android:layout_alignBottom="@id/activity_day_screen_points_achieved_text" custom:font="@string/roboto_regular" />
+            <com.qualcomm.toq.base.ui.customview.PhubTextView android:textSize="9.0sp" android:textColor="#ff98a0a0" android:id="@id/activity_day_screen_points_target_pts_text" android:paddingBottom="6.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/activity_points_leading_text" android:layout_toRightOf="@id/activity_day_screen_points_target_text" android:layout_alignBottom="@id/activity_day_screen_points_target_text" custom:font="@string/roboto_regular" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

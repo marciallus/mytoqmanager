@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:id="@id/reminder_times_app_root" android:background="#ff2f3234" android:layout_width="fill_parent" android:layout_height="fill_parent" android:splitMotionEvents="false"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:custom="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:orientation="horizontal" android:id="@id/reminder_times_title_bar" android:background="@drawable/title_bar" android:layout_width="fill_parent" android:layout_height="wrap_content" android:splitMotionEvents="false">
+        <LinearLayout android:orientation="horizontal" android:id="@id/reminder_times_done_linear_layout" android:background="@drawable/done_selector" android:layout_width="wrap_content" android:layout_height="47.0dip" android:layout_alignParentLeft="true" android:layout_centerVertical="true">
+            <ImageView android:layout_gravity="left|center" android:id="@id/reminder_times_bar_done_image" android:background="@drawable/action_bar_done_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="11.0dip" android:contentDescription="@string/description_action_bar_done" />
+            <com.qualcomm.toq.base.ui.customview.PhubTextView android:textSize="18.0sp" android:textColor="#ffffffff" android:gravity="center" android:layout_gravity="center" android:id="@id/reminder_times_bar_done_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="@string/done" custom:font="@string/roboto_regular" />
+            <View android:layout_gravity="center" android:background="#ff505454" android:layout_width="1.0dip" android:layout_height="24.0dip" android:layout_marginLeft="15.0dip" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:id="@id/reminder_times_menu_bar_image" android:background="@drawable/done_selector" android:layout_width="48.0dip" android:layout_height="48.0dip" android:layout_marginRight="1.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+            <ImageView android:background="@drawable/action_bar_menu_selector" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:contentDescription="@string/description_action_bar_menu" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:id="@id/reminder_times_add_button_image" android:background="@drawable/done_selector" android:layout_width="48.0dip" android:layout_height="48.0dip" android:layout_marginRight="1.0dip" android:layout_toLeftOf="@id/reminder_times_menu_bar_image" android:layout_centerVertical="true">
+            <ImageView android:background="@drawable/action_bar_new_selector" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:contentDescription="@string/description_action_bar_new" />
+        </LinearLayout>
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/reminder_times_content" android:paddingLeft="15.0dip" android:paddingRight="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/reminder_times_title_bar">
+        <com.qualcomm.toq.base.ui.customview.PhubTextView android:textSize="26.0sp" android:textColor="#ff98a0a0" android:gravity="center" android:layout_gravity="left|center" android:id="@id/reminder_times_title_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:layout_marginTop="7.0dip" android:text="@string/reminder_times_title_name" custom:font="@string/roboto_light" />
+        <View android:background="#ff6d6f71" android:layout_width="fill_parent" android:layout_height="2.0dip" />
+        <ListView android:scrollbarStyle="outsideOverlay" android:id="@android:id/list" android:layout_width="fill_parent" android:layout_height="wrap_content" android:listSelector="@android:color/transparent" android:divider="#ff434648" android:dividerHeight="1.0dip" />
+        <View android:layout_width="fill_parent" android:layout_height="5.0dip" />
+    </LinearLayout>
+</RelativeLayout>

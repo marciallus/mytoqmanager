@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:custom="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:layout_width="wrap_content" android:layout_height="60.0dip">
+        <com.qualcomm.toq.base.ui.customview.PhubTextView android:textSize="24.0sp" android:textColor="#ff5eb7c8" android:layout_gravity="left|center" android:id="@id/activity_dialog_title_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:text="@string/activity_dialog_title_text" custom:font="@string/roboto_medium" />
+    </LinearLayout>
+    <View android:background="#ff5eb7c8" android:layout_width="fill_parent" android:layout_height="2.0dip" />
+    <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:layout_marginBottom="15.0dip">
+        <com.qualcomm.toq.base.ui.customview.PhubTextView android:textSize="18.0sp" android:textColor="@android:color/black" android:layout_gravity="left|center" android:id="@id/activity_dialog_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip" android:text="@string/activity_dialog_text" custom:font="@string/roboto_regular_file" />
+    </LinearLayout>
+    <View android:background="#ffe2e2e1" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    <Button android:textSize="16.0sp" android:textColor="@android:color/black" android:gravity="center" android:layout_gravity="center" android:id="@id/activity_ok_button" android:background="@drawable/dialog_items_selector" android:layout_width="fill_parent" android:layout_height="50.0dip" android:text="@string/activity_ok_button" />
+</LinearLayout>

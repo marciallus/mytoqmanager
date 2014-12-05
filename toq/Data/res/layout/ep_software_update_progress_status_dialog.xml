@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:custom="http://schemas.android.com/apk/res-auto">
+    <com.qualcomm.toq.base.ui.customview.PhubTextView android:textSize="22.0sp" android:textColor="#ff35b5e4" android:layout_gravity="left|center" android:id="@id/ep_firmware_progress_title_text" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="15.0dip" android:layout_marginRight="20.0dip" android:layout_marginBottom="15.0dip" android:text="@string/software_udpate_dialog_title" custom:font="@string/roboto_medium" />
+    <View android:layout_gravity="center" android:id="@id/firmware_update_title_divider_image" android:background="#ffe2e2e1" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="2.0dip" />
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/ep_primary_progress_loading_layout" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <View android:layout_gravity="center" android:id="@id/watch_connect_divider_image" android:background="#ffe2e2e1" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/ep_secondary_progress_loading_layout" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <View android:layout_gravity="center" android:id="@id/ep_firmware_retry_divider_image" android:background="#ffe2e2e1" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="2.0dip" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/ep_sw_update_buttons_layout" android:background="@android:color/white" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="50.0dip">
+        <Button android:textSize="16.0sp" android:textColor="@android:color/black" android:gravity="center" android:layout_gravity="center" android:id="@id/ep_sw_retry_button" android:background="@drawable/dialog_items_selector" android:layout_width="wrap_content" android:layout_height="50.0dip" android:text="@string/ep_sw_retry" android:layout_weight="5.0" />
+        <View android:id="@id/ep_sw_divider_view" android:background="#ffe2e2e1" android:layout_width="1.0dip" android:layout_height="50.0dip" />
+        <Button android:textSize="16.0sp" android:textColor="@android:color/black" android:gravity="center" android:layout_gravity="center" android:id="@id/ep_sw_continue_button" android:background="@drawable/dialog_items_selector" android:layout_width="wrap_content" android:layout_height="50.0dip" android:text="@string/ep_sw_continue" android:layout_weight="5.0" />
+    </LinearLayout>
+</LinearLayout>

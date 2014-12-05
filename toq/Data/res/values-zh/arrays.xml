@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="comms_list_preference">
+        <item>显示最近10条</item>
+        <item>显示最近20条</item>
+        <item>显示最近30条</item>
+        <item>显示最近40条</item>
+    </string-array>
+    <string-array name="clock_light_settings_list">
+        <item>10 秒</item>
+        <item>20 秒</item>
+        <item>30 秒</item>
+    </string-array>
+    <string-array name="double_tap_speed_settings_list">
+        <item>慢速</item>
+        <item>中速</item>
+        <item>快速</item>
+    </string-array>
+    <string-array name="main_activity_pop_up_list_headset_disabled">
+        <item>Watch setup video</item>
+        <item>Help</item>
+        <item>About</item>
+        <item>Setup headsets</item>
+    </string-array>
+    <string-array name="main_activity_pop_up_list_headset_enabled">
+        <item>手表设置视频</item>
+        <item>帮助</item>
+        <item>关于</item>
+    </string-array>
+    <string-array name="weather_activity_pop_up_list">
+        <item>改变单位</item>
+        <item>放弃更改</item>
+    </string-array>
+    <string-array name="ambient_activity_pop_up_list">
+        <item>放弃更改</item>
+    </string-array>
+    <string-array name="qr_activity_pop_up_list">
+        <item>恢复默认</item>
+        <item>放弃更改</item>
+    </string-array>
+    <string-array name="fav_app_main_pop_up_list">
+        <item>设置到主菜单</item>
+        <item>放弃更改</item>
+    </string-array>
+    <string-array name="ambient_weather_temperature_units">
+        <item>飞轮海</item>
+        <item>摄氏</item>
+    </string-array>
+    <string-array name="fav_app_noapplet_pop_up_list">
+        <item>放弃更改</item>
+    </string-array>
+    <string-array name="notification_act__pop_up_list">
+        <item>选择全部</item>
+        <item>清除全部</item>
+        <item>放弃更改</item>
+    </string-array>
+    <string-array name="notification_act__pop_up_list_non_accesibility">
+        <item>放弃更改</item>
+    </string-array>
+    <string-array name="icon_style_activity_pop_up_list">
+        <item>放弃更改</item>
+    </string-array>
+    <string-array name="alljoyn_settings_activity_pop_up_list">
+        <item>放弃更改</item>
+    </string-array>
+    <string-array name="activity_settings_activity_pop_up_list">
+        <item>放弃更改</item>
+        <item>清除运动记录</item>
+    </string-array>
+    <string-array name="activity_settings_activity_pop_up_list_release">
+        <item>放弃更改</item>
+    </string-array>
+    <string-array name="activity_goal_reminder_settings_pop_up_list">
+        <item>放弃更改</item>
+    </string-array>
+    <string-array name="music_not_supported_apps_pkg_array">
+        <item>com.android.providers.media</item>
+        <item>com.htc.InternetRadio</item>
+        <item>com.google.android.youtube</item>
+        <item>com.jiubang.goscreenlock</item>
+        <item>tunein.player</item>
+        <item>com.skin</item>
+        <item>com.htc.fm</item>
+        <item>com.estrongs.android.pop</item>
+        <item>com.triplayinc.mmc</item>
+        <item>ru.tentracks.android</item>
+        <item>com.cyberon.cvc</item>
+        <item>com.mycloudplayers.mycloudplayer</item>
+        <item>com.soundcloud.android</item>
+        <item>com.tencent.mm</item>
+    </string-array>
+</resources>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:custom="http://schemas.android.com/apk/res-auto">
+    <com.qualcomm.toq.base.ui.customview.PhubTextView android:textSize="18.0sp" android:textColor="#ff222222" android:layout_gravity="left" android:id="@id/watch_ep_detail_list_item_title" android:layout_width="wrap_content" android:layout_height="wrap_content" custom:font="@string/roboto_regular" />
+    <com.qualcomm.toq.base.ui.customview.PhubTextView android:textSize="16.0sp" android:textStyle="normal" android:textColor="#ff777777" android:layout_gravity="left" android:id="@id/watch_ep_detail_list_item_content" android:layout_width="wrap_content" android:layout_height="wrap_content" custom:font="@string/roboto_regular" />
+</LinearLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:custom="http://schemas.android.com/apk/res-auto">
+    <com.qualcomm.toq.base.ui.customview.PhubTextView android:textSize="22.0sp" android:textColor="#ff35b5e4" android:layout_gravity="left|center" android:id="@id/ep_progress_title_text" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="12.0dip" custom:font="@string/roboto_medium" />
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/ep_progress_loading_layout" android:padding="15.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip">
+        <ProgressBar android:layout_gravity="center" android:id="@id/ep_progress_loading_progress" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:indeterminateDrawable="@drawable/ep_headset_large_progress_drawable" />
+        <com.qualcomm.toq.base.ui.customview.PhubTextView android:textSize="21.0sp" android:textStyle="bold" android:textColor="@color/ep_dialog_connecting_text_black_color" android:gravity="left|center" android:layout_gravity="center" android:id="@id/ep_progress_loading_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:text="@string/ep_connecting_headsets" android:singleLine="true" custom:font="@string/roboto_medium" />
+        <com.qualcomm.toq.base.ui.customview.PhubTextView android:textSize="15.0sp" android:textColor="@color/ep_dialog_info_text_black_color" android:gravity="center" android:layout_gravity="center" android:id="@id/ep_progress_loading_sub_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="2" custom:font="@string/roboto_light" />
+    </LinearLayout>
+    <View android:background="#ffe2e2e1" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="2.0dip" />
+</LinearLayout>

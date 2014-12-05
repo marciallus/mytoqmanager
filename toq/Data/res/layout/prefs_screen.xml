@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:id="@id/preferences_root_layout" android:background="#ff2f3234" android:layout_width="fill_parent" android:layout_height="fill_parent" android:splitMotionEvents="false"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:custom="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="horizontal" android:id="@id/top_preference_bar_layout" android:background="@drawable/prefs_bar_bg_down_selector" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true">
+        <ImageView android:layout_gravity="left" android:id="@id/down_arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/preferencebar_arrow_down_selector" android:contentDescription="@string/description_preferencebar_arrow_down" />
+        <com.qualcomm.toq.base.ui.customview.PhubTextView android:textSize="22.0sp" android:textColor="@android:color/white" android:layout_gravity="center_vertical" android:id="@id/preference_bar_text" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:text="@string/preferences_text" android:layout_weight="6.0" custom:font="@string/roboto_regular" />
+    </LinearLayout>
+    <ExpandableListView android:id="@id/prefs_expandable_list_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:listSelector="@android:color/transparent" android:cacheColorHint="@android:color/transparent" android:groupIndicator="@null" android:childDivider="@android:color/transparent" android:divider="@android:color/transparent" android:layout_below="@id/top_preference_bar_layout" />
+</RelativeLayout>

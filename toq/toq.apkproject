@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<VirtuousTenProject>
+  <Settings>
+    <Setting Name="binaryname" Value="com.qualcomm.toq-last-modified.apk" />
+    <Setting Name="version" Value="4" />
+    <Setting Name="hassuccessfulimport" Value="True" />
+    <Setting Name="activeconfiguration" Value="Advanced editing" />
+    <Setting Name="isdebugtarget" Value="False" />
+  </Settings>
+  <OpenDocuments />
+  <MarkedLines />
+  <ScriptConfigurations>
+    <ScriptConfiguration ConfigurationName="Advanced editing" Description="Useful for both fullly featured smali editing and advanced thememing work, provides all the necessary modules for more complex tasks." Type="Apk" ID="C45557AD-5352-4C28-BCCC-5708CEF82FBB" SortOrder="21">
+      <Import SyncWith="Build, GenerateJava">
+        <VariableModule Name="TmpImportDir" Value="$(NewTmpPath())" IsEssential="true" IsEnabled="true" />
+        <!---->
+        <UnzipModule ZipFile="$(ImportBinaryPath)" OutputDirectory="$(TmpImportDir)" IsEssential="true" IsEnabled="true" />
+        <!---->
+        <ApkToolDecompileModule FrameworkTag="" AdditionalCommandlineFlags="$(DefaultApkToolDecompileArgs)" ApkToolType="UseNewest" CustomApkToolVersion="" DataDirectory="$(TmpImportDir)" IsEssential="true" IsEnabled="true" />
+        <!---->
+        <BakSmaliModule DexFileDirectory="$(TmpImportDir)" APILevel="Kitkat" AdditionalCommandlineFlags="$(DefaultBakSmaliArgs)" SmaliType="UseNewest" CustomSmaliVersion="" IsEssential="true" IsEnabled="true" />
+        <!---->
+        <BackupOriginalDataModule BinaryPath="$(ImportBinaryPath)" BackupDirectory="$(MiscDirectory)\Original files" IsEssential="false" IsEnabled="true" />
+        <!---->
+        <GenerateJavaModule BinaryPath="$(ImportBinaryPath)" JavaFilesDirectory="$(MiscDirectory)\JavaSrc" GenerationMethod="JAD" IsEssential="false" IsEnabled="true" />
+        <!---->
+        <CleanupModule TargetDirectory="$(DataDirectory)" IsEssential="true" IsEnabled="true" />
+        <!---->
+        <CopyModule SourceDirectory="$(TmpImportDir)" TargetDirectory="$(DataDirectory)" IsEssential="true" IsEnabled="true" />
+        <!---->
+      </Import>
+      <Build>
+        <VariableModule Name="TmpBuildDir" Value="$(NewTmpPath())" IsEssential="true" IsEnabled="true" />
+        <!---->
+        <CopyModule SourceDirectory="$(DataDirectory)" TargetDirectory="$(TmpBuildDir)" IsEssential="true" IsEnabled="true" />
+        <!---->
+        <SmaliModule SmaliFilesDirectory="$(TmpBuildDir)\smali" DexFileDirectory="$(TmpBuildDir)" APILevel="Kitkat" AdditionalCommandlineFlags="$(DefaultSmaliArgs)" SmaliType="UseNewest" CustomSmaliVersion="" IsEssential="true" IsEnabled="true" />
+        <!---->
+        <ApkToolCompileModule DataDirectory="$(TmpBuildDir)" ApkToolType="UseNewest" CustomApkToolVersion="" AdditionalCommandlineFlags="$(DefaultApkToolCompileArgs) " IsEssential="true" IsEnabled="true" />
+        <!---->
+        <VariableModule Name="BinaryFilePath" Value="$(BinaryDirectory)\$(BinaryName)" IsEssential="true" IsEnabled="true" />
+        <!---->
+        <ZipModule InputDirectory="$(TmpBuildDir)" OutputZipFile="$(BinaryFilePath)" CompressionLevel="0" IsEssential="true" IsEnabled="true" />
+        <!---->
+        <SignModule TargetFile="$(BinaryFilePath)" SignType="OwnKeys" CustomSignCert="D:\docs\dev\TOQ\cert.x509.pem" CustomSignKey="D:\docs\dev\TOQ\private.pk8" IsEssential="true" IsEnabled="true" />
+        <!---->
+        <ZipalignModule TargetFile="$(BinaryFilePath)" IsEssential="true" IsEnabled="true" />
+        <!---->
+        <GenerateJavaModule BinaryPath="$(BinaryFilePath)" JavaFilesDirectory="$(MiscDirectory)\JavaSrc" GenerationMethod="JAD" IsEssential="false" IsEnabled="true" />
+        <!---->
+      </Build>
+      <Push>
+        <VariableModule Name="FileToPush" Value="$(BinaryDirectory)\$(BinaryName)" IsEssential="true" IsEnabled="true" />
+        <!---->
+        <CheckForUnbuildChangesModule IsEssential="false" IsEnabled="true" />
+        <!---->
+        <VerifyUnsecureBootImageModule IsEssential="false" IsEnabled="true" />
+        <!---->
+        <ADBRemountModule IsEssential="false" IsEnabled="true" />
+        <!---->
+        <ADBTransferModule TransferMethod="Install" FilePath="$(FileToPush)" PushPath="/system/app/" IsEssential="true" IsEnabled="true" />
+        <!---->
+      </Push>
+      <GenerateJava>
+        <VariableModule Name="TmpBuildDir" Value="$(NewTmpPath())" IsEssential="true" IsEnabled="true" />
+        <!---->
+        <CopyModule SourceDirectory="$(DataDirectory)" TargetDirectory="$(TmpBuildDir)" IsEssential="true" IsEnabled="true" />
+        <!---->
+        <SmaliModule SmaliFilesDirectory="$(TmpBuildDir)\smali" DexFileDirectory="$(TmpBuildDir)" APILevel="Kitkat" AdditionalCommandlineFlags="$(DefaultSmaliArgs)" SmaliType="UseNewest" CustomSmaliVersion="" IsEssential="true" IsEnabled="true" />
+        <!---->
+        <VariableModule Name="BinaryFilePath" Value="$(NewTmpPath())\tmp.bin" IsEssential="true" IsEnabled="true" />
+        <!---->
+        <ZipModule InputDirectory="$(TmpBuildDir)" OutputZipFile="$(BinaryFilePath)" CompressionLevel="0" IsEssential="true" IsEnabled="true" />
+        <!---->
+        <GenerateJavaModule BinaryPath="$(BinaryFilePath)" JavaFilesDirectory="$(MiscDirectory)\JavaSrc" GenerationMethod="JAD" IsEssential="false" IsEnabled="true" />
+        <!---->
+      </GenerateJava>
+    </ScriptConfiguration>
+  </ScriptConfigurations>
+</VirtuousTenProject>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="#ffcccccc" android:layout_width="fill_parent" android:layout_height="fill_parent" android:splitMotionEvents="false"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:custom="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:layout_gravity="left" android:orientation="horizontal" android:id="@id/eula_screen_title_bar" android:background="@drawable/title_bar" android:paddingLeft="10.0dip" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:layout_gravity="center" android:id="@id/eula_title_bar_image" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/title_bar_logo" android:contentDescription="@string/description_eula_title_bar_logo" />
+        <com.qualcomm.toq.base.ui.customview.PhubTextView android:textSize="25.0sp" android:textColor="#ffffffff" android:layout_gravity="center" android:id="@id/eula_title_bar_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="@string/application_title" custom:font="@string/roboto_light" />
+    </LinearLayout>
+    <FrameLayout android:id="@id/eula_screen_content_webview" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginRight="20.0dip" android:layout_marginBottom="60.0dip" android:layout_below="@id/eula_screen_title_bar" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/eula_bottom_linear_layout" android:background="#ffe2e3e2" android:layout_width="fill_parent" android:layout_height="57.0dip" android:layout_alignParentBottom="true" android:splitMotionEvents="false">
+        <View android:layout_width="15.0dip" android:layout_height="fill_parent" />
+        <Button android:textSize="16.0sp" android:textColor="#ffffffff" android:gravity="center" android:id="@id/eula_screen_decline_button" android:background="@drawable/gray_button_selector" android:padding="4.0dip" android:layout_width="0.0dip" android:layout_height="37.0dip" android:layout_marginTop="13.0dip" android:text="@string/eula_screen_decline" android:layout_weight="4.0" />
+        <View android:layout_width="11.0dip" android:layout_height="fill_parent" />
+        <Button android:textSize="16.0sp" android:textColor="#ffffffff" android:gravity="center" android:id="@id/eula_screen_accept_button" android:background="@drawable/blue_button_selector" android:padding="4.0dip" android:layout_width="0.0dip" android:layout_height="37.0dip" android:layout_marginTop="13.0dip" android:text="@string/eula_screen_accept" android:layout_weight="4.0" />
+        <View android:layout_width="15.0dip" android:layout_height="fill_parent" />
+    </LinearLayout>
+</RelativeLayout>

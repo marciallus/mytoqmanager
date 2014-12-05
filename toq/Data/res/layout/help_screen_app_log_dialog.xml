@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:custom="http://schemas.android.com/apk/res-auto">
+    <com.qualcomm.toq.base.ui.customview.PhubTextView android:textSize="23.0sp" android:textColor="#ff35b5e4" android:layout_gravity="left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="13.0dip" android:text="@string/help_screen_app_logs_primary_txt" custom:font="@string/roboto_medium" />
+    <View android:background="#ff35b5e4" android:layout_width="fill_parent" android:layout_height="2.0dip" android:layout_marginTop="13.0dip" />
+    <com.qualcomm.toq.base.ui.customview.PhubTextView android:textSize="18.0sp" android:textColor="#ff000000" android:layout_gravity="left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="10.0dip" android:text="@string/app_log_info_dialog_text" custom:font="@string/roboto_medium" />
+    <RelativeLayout android:layout_gravity="left" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="15.0dip">
+        <CheckBox android:id="@id/app_log_dialog_checkbox" android:focusable="true" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:button="@drawable/custom_checkbox_app_log_dialog" android:layout_centerVertical="true" />
+        <com.qualcomm.toq.base.ui.customview.PhubTextView android:textSize="18.0sp" android:textColor="#ff000000" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="@string/app_log_info_dialog_checkbox_text" android:layout_toRightOf="@id/app_log_dialog_checkbox" android:layout_centerVertical="true" custom:font="@string/roboto_medium" />
+    </RelativeLayout>
+    <View android:background="#ffaeaeae" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginTop="10.0dip" />
+    <LinearLayout android:orientation="horizontal" android:background="#ffcccccc" android:layout_width="fill_parent" android:layout_height="50.0dip">
+        <Button android:textSize="16.0sp" android:textColor="@android:color/black" android:gravity="center" android:layout_gravity="center" android:id="@id/app_log_info_cancel_button" android:background="@drawable/dialog_items_selector" android:layout_width="wrap_content" android:layout_height="50.0dip" android:text="@string/app_log_info_dialog_cancel_txt" android:layout_weight="5.0" />
+        <View android:background="#ffaeaeae" android:layout_width="1.0dip" android:layout_height="50.0dip" />
+        <Button android:textSize="16.0sp" android:textColor="@android:color/black" android:gravity="center" android:layout_gravity="center" android:id="@id/app_log_info_send_log_button" android:background="@drawable/dialog_items_selector" android:layout_width="wrap_content" android:layout_height="50.0dip" android:text="@string/app_log_info_dialog_send_log_txt" android:layout_weight="5.0" />
+    </LinearLayout>
+</LinearLayout>

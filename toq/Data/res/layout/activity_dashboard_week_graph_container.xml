@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/calendar_done_pressed" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:custom="http://schemas.android.com/apk/res-auto">
+    <com.qualcomm.toq.base.ui.customview.PhubTextView android:textSize="18.0sp" android:textColor="#ff98a0a0" android:layout_gravity="left|center" android:id="@id/activity_dashboard_week_graph_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="23.0dip" android:layout_marginRight="20.0dip" custom:font="@string/roboto_light" />
+    <LinearLayout android:layout_gravity="left|center" android:orientation="vertical" android:id="@id/activity_dashboard_bar_graph" android:layout_width="wrap_content" android:layout_height="100.0dip" android:layout_marginLeft="20.0dip" android:layout_marginTop="15.0dip" android:layout_marginRight="20.0dip" />
+    <View android:background="@android:color/black" android:layout_width="wrap_content" android:layout_height="0.5dip" android:layout_marginTop="23.0dip" />
+</LinearLayout>

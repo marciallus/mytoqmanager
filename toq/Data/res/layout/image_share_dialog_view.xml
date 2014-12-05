@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:gravity="center" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/image_share_preview_text" />
+    <ImageView android:id="@id/dialog_image" android:layout_width="288.0dip" android:layout_height="192.0dip" android:contentDescription="@string/description_dialog_image" />
+    <RelativeLayout android:orientation="horizontal" android:background="#ffe6e7e7" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ToggleButton android:id="@id/dithering_togglebutton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textOn="DITHERING : ON" android:textOff="DITHERING : OFF" android:layout_alignParentLeft="true" android:onClick="onToggleClicked" />
+        <Button android:id="@id/image_share_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/image_share_dailog_button_text" android:layout_alignParentRight="true" android:onClick="shareImageToWD" />
+    </RelativeLayout>
+</LinearLayout>

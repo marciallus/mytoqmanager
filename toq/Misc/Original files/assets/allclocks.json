@@ -1,0 +1,115 @@
+{
+    "Clocks": [
+         {
+            "displayName": "Classic",
+            "icon": "clock_analog",
+            "type": "builtin"
+        },
+        {
+            "displayName": "Bold",
+            "icon": "clock_standard",
+            "type": "builtin"
+        },
+        {
+            "displayName": "Agenda",
+            "icon": "clock_agenda",
+            "type": "builtin"
+        },
+        {
+            "bundle": "myclock.zip",
+            "type": "dynamic"
+        },
+        {
+            "displayName": "Facets",
+            "icon": "clock_facets",
+            "type": "builtin"
+        },
+        {
+            "displayName": "Typographic",
+            "icon": "clock_word_time",
+            "type": "builtin"
+        },
+        {
+            "displayName": "Weather Grid",
+            "icon": "clock_weather",
+            "type": "builtin"
+        },
+        {
+            "displayName": "Stocks",
+            "icon": "clock_stocks",
+            "type": "builtin"
+        },
+       
+        {
+            "displayName": "Gauge",
+            "icon": "clock_gauge",
+            "type": "builtin"
+        },
+        {
+            "displayName": "Diver",
+            "icon": "clock_diver",
+            "type": "builtin"
+        },
+        {
+            "displayName": "Calypso",
+            "icon": "clock_floral",
+            "type": "builtin"
+        },
+        {
+            "displayName": "Calendar",
+            "icon": "clock_calendar",
+            "type": "builtin"
+        },
+        {
+            "displayName": "Blossom",
+            "icon": "clock_leaves",
+            "type": "builtin"
+        },
+        {
+            "displayName": "Layers",
+            "icon": "clock_layers",
+            "type": "builtin"
+        },
+        {
+            "displayName": "Intersection",
+            "icon": "clock_diagonals",
+            "type": "builtin"
+        },
+        {
+            "displayName": "Ring",
+            "icon": "clock_circles",
+            "type": "builtin"
+        },
+        {
+            "displayName": "Fall Leaves",
+            "icon": "clock_fall_leaves",
+            "type": "builtin"
+        },
+        {
+            "bundle": "worldclock.zip",
+            "type": "dynamic"
+        },
+        {
+            "displayName": "Activity",
+            "icon": "clock_activity",
+            "type": "builtin"
+        },
+        {
+            "bundle": "prismclock.zip",
+            "type": "dynamic"
+        },
+        {
+            "bundle": "tileclock.zip",
+            "type": "dynamic"
+        },
+        {
+            "bundle": "degreesclock.zip",
+            "type": "dynamic"
+        },
+       
+	{
+            "bundle": "clemclock.zip",
+            "type": "dynamic"
+        }
+    ]
+}

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:icon="@android:drawable/ic_media_play" android:id="@id/start_logging" android:title="@string/start_logging" />
+    <item android:icon="@android:drawable/ic_menu_search" android:id="@id/share_log" android:title="@string/share_log" />
+    <item android:id="@id/find_wd" android:title="@string/find_wd_txt" />
+    <item android:id="@id/share_pics" android:title="@string/share_pics" />
+    <item android:id="@id/log_activity_db" android:title="@string/log_activity_db" />
+    <item android:id="@id/set_tftp_size" android:title="@string/set_tftp_size" />
+    <item android:id="@id/enable_custom_fw" android:title="@string/enable_custom_fw" />
+</menu>

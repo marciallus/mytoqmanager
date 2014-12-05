@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/toggle_row_view" android:paddingBottom="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="28.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="16.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:custom="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:id="@id/toddle_row_parent_layout" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="6.5">
+        <com.qualcomm.toq.base.ui.customview.PhubTextView android:textSize="18.0sp" android:textColor="#ffffffff" android:layout_gravity="left" android:id="@id/toggle_row_primary_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/toggle_row_primary_text" custom:font="@string/roboto_light" />
+        <com.qualcomm.toq.base.ui.customview.PhubTextView android:textSize="14.0sp" android:textStyle="normal" android:textColor="#ff797f7f" android:layout_gravity="left" android:id="@id/toggle_row_secondary_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:text="@string/toggle_row_secondary_text" custom:font="@string/roboto_light" />
+    </LinearLayout>
+    <com.qualcomm.toq.base.ui.customview.PhubCustomSwitchView android:gravity="center" android:id="@id/toggle_row_switch" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:checked="true" android:textOn="@string/ON" android:textOff="@string/OFF" android:thumb="@drawable/custom_switch" android:layout_weight="3.5" android:track="@drawable/switch_bg_holo_light" />
+</LinearLayout>

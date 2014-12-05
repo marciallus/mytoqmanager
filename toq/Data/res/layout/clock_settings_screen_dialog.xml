@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:custom="http://schemas.android.com/apk/res-auto">
+    <com.qualcomm.toq.base.ui.customview.PhubTextView android:textSize="22.0sp" android:textColor="#ff35b5e4" android:layout_gravity="left|center" android:id="@id/clock_settings_dialog_title_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="12.0dip" custom:font="@string/roboto_medium" />
+    <View android:id="@id/clock_settings_title_divider" android:background="#ffe2e2e1" android:layout_width="wrap_content" android:layout_height="2.0dip" android:layout_marginTop="12.0dip" />
+    <com.qualcomm.toq.base.ui.customview.PhubTextView android:textSize="18.0sp" android:textColor="#ff787878" android:gravity="left|center" android:layout_gravity="center" android:id="@id/clock_settings_desc_text" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="100.0dip" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip" custom:font="@string/roboto_regular" />
+    <View android:background="#ffe2e2e1" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="2.0dip" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="70.0dip">
+        <Button android:textSize="16.0sp" android:textColor="@android:color/black" android:gravity="center" android:layout_gravity="center" android:id="@id/clock_settings_dialog_cancel_button" android:background="@drawable/dialog_items_selector" android:paddingTop="13.0dip" android:paddingBottom="13.0dip" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="70.0dip" android:text="@string/cancel" android:layout_weight="1.0" />
+        <View android:background="#ffe2e2e1" android:layout_width="2.0dip" android:layout_height="70.0dip" />
+        <com.qualcomm.toq.base.ui.customview.PhubTextView android:textSize="16.0sp" android:textColor="@android:color/black" android:gravity="center" android:layout_gravity="center" android:id="@id/clock_settings_dialog_weather_stock_preferences" android:background="@drawable/dialog_items_selector" android:paddingTop="13.0dip" android:paddingBottom="13.0dip" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="70.0dip" android:layout_weight="1.0" custom:font="@string/roboto_regular" />
+    </LinearLayout>
+</LinearLayout>

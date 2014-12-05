@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/advanced_settings_selector" android:layout_width="fill_parent" android:layout_height="fill_parent" android:onClick="advancedItemsOnClick"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:custom="http://schemas.android.com/apk/res-auto">
+    <View android:id="@id/advanced_settings_items_divider" android:layout_width="fill_parent" android:layout_height="10.0dip" />
+    <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="13.0dip" android:layout_marginRight="13.0dip">
+        <com.qualcomm.toq.base.ui.customview.PhubTextView android:textSize="18.0sp" android:textColor="#ffffffff" android:layout_gravity="left" android:id="@id/advanced_settings_list_item_title" android:layout_width="wrap_content" android:layout_height="wrap_content" custom:font="@string/roboto_light" />
+        <com.qualcomm.toq.base.ui.customview.PhubTextView android:textSize="14.0sp" android:textStyle="normal" android:textColor="#ff797f7f" android:layout_gravity="left" android:id="@id/advanced_settings_list_item_content" android:layout_width="wrap_content" android:layout_height="wrap_content" custom:font="@string/roboto_light" />
+    </LinearLayout>
+    <View android:id="@id/advanced_settings_list_item_divider" android:background="#ff7f7d7d" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginTop="10.0dip" />
+</LinearLayout>
